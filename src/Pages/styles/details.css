@@ -1,0 +1,31 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.view-img:hover{
+  background-color: rgb(92, 238, 234);
+}
+
+.addCartBtn {
+  position: absolute;
+  bottom: -10px;
+  visibility: hidden; /* Initially hidden */
+  transition: .7s;
+  opacity: .4;
+}
+
+/* Show button when cart container is hovered */
+.cart-container:hover .addCartBtn {
+  visibility: visible;
+  bottom: 0px;
+  opacity: .9;
+}
+
+
+@media screen and (max-width: 1199px) {
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,302 @@
+.orderDetails{
+  width: 100%;
+  display: flex;
+
+  .orderDetailsContainer{
+    flex: 6;
+
+    .top, .middle, .bottom{
+      padding: 10px;
+      margin: 20px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+      h1{
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .middle-top{
+        display: flex;
+        padding: 20px;
+        
+        p{
+          font-size: 17px;
+          color: rgb(185, 177, 177);
+        }
+
+        span{
+          font-size: 15px;
+          font-weight: bold;
+          color: rgba(0, 0, 0, 0.623);
+        }
+
+        .orderId{
+          margin-right: 50px;          
+        }
+      }
+
+      .middle-mid{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-between;
+
+
+        .order-input, .select{
+          flex: 1;
+          padding: 15px;
+          border: none;
+          outline: none;
+          border: 1px solid rgba(128, 128, 128, 0.44);
+          border-radius: 6px;
+          position: relative;
+          font-size: 12px;
+        }
+  
+        select{
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          font-weight: bold;
+        }
+  
+        .mid-legend{
+          position: absolute;
+          left: 12px;
+          top: -9px;
+          background-color: white;
+        }
+      }
+
+      .middle-bottom{
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .mb-left{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          img{
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 13px;
+          }
+
+          .order-item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .item-title{
+              font-size: 17px;
+            }
+
+            .item-price{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              p{
+                font-size: 15px;
+                color: gray;
+              }
+
+              input{
+                width: 50px;
+                padding: 10px;
+                border: none;
+                border: 1px solid gray;
+                outline: none;
+                border-radius: 6px;
+              }
+            }
+          }
+
+          .item-price{
+            display: flex;
+          }
+        }
+      }
+    }
+
+    .bottom{
+      display: flex;
+      gap: 10px;
+      position: relative;
+      margin-bottom: 10px;
+
+      .bottom-left{
+        flex: 1;
+        height: 400px;
+        
+        .shipping-address-container, .cutomer-note-container{
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          position: relative;
+
+
+          input {
+            width: 100%;
+            padding-bottom: 100px;
+            outline: none;
+            border: 1px solid rgba(128, 128, 128, 0.44);
+            border-radius: 6px;
+            position: relative;
+            font-size: 12px;
+            text-indent: 10px;
+            padding-top: 10px;
+            font-size: 17px;
+            font-weight: bold;
+          }
+
+          input:hover{
+            border: 1px solid rgb(9, 9, 9);
+          }
+
+          p{
+            position: absolute;
+            padding: 2px;
+            top: 10px;
+            left: 35px;
+            background-color: white;
+            font-size: 13px;
+          }
+        }
+        
+      }
+
+
+      .bottom-right{
+        padding: 20px;
+        flex: 1;
+
+        .billing-right-container{
+          padding: 20px;
+          border-radius: 10px;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  
+          p{
+            font-weight: bold;
+          }
+
+          .hr{
+            border-color: #80808054;
+          }
+        }
+
+
+        .billing{
+          .billing-title, .billing-subTotal, .billing-shipping-fee, .billing-discount{
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .billing-shipping-fee-value, .billing-discount-value{
+              display: flex;
+              align-items: center;
+              gap: 7px;
+
+              input{
+                width: 50px;
+                padding: 10px;
+                border: none;
+                border: 1px solid gray;
+                outline: none;
+                border-radius: 6px;
+              }
+            }
+          }
+        }
+        .br-bottom{
+          margin-top: 20px;
+
+
+          .billing-total{
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .payment-method{
+            margin-top: 20px;
+            font-weight: 400;
+
+            span{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bookmarkBtn {
+  position: absolute;
+  bottom: 15px;
+  margin-left: 30px;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}

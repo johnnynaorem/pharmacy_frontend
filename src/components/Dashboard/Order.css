@@ -1,0 +1,79 @@
+.orderStatus {
+  padding: 3px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  &.Processing{
+    background-color: #8080804d;
+  }
+  &.NotProcess{
+    background-color: #fb073398;
+  }
+  &.Shipped{
+    background-color: rgb(45, 218, 248);
+    color: rgb(6, 6, 6);
+  }
+  &.Delivered{
+    background-color: rgb(173, 232, 173);
+    color: green;
+  }
+}
+
+.bag-icon, .user-profile-icon{
+  width: 30px;
+  margin-right: 8px;
+}
+
+.profile-edit-btn{
+  color: #D23F57;
+  background-color: #ffd9d9c2; 
+  border-radius: 10px; 
+  font-size: 0.875rem; 
+  font-weight: 600; 
+  cursor: pointer;
+  transition: background 1s;
+}
+.profile-edit-btn:hover{
+  background-color: transparent;
+}
+
+.billing-title{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.billing-address-value{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.review{
+  font-size: 0.875rem;
+  color: rgb(210, 63, 87);
+  cursor: pointer;
+  transition: 3s;
+  border-radius: 5px;
+}
+
+.review:hover{
+  background-color: rgb(232, 155, 155);
+}
+
+.billing-title, .billing-subTotal, .billing-shipping-fee, .billing-discount, .billing-total{
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-details, .orderDetailsTop, .item-price, .category-name, .billing-subTotal, .billing-shipping-fee, .billing-discount, .billing-total{
+  font-size: 14px;
+  font-weight: 400;
+  color: #7D879C;
+}
+
+.user-details-value, .order-Id-Value, .place-on-value, .item-title, .billing-subtotal-value, .billing-shipping-fee-value, .billing-discount-value, .billing-total-value{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(43, 52, 69);
+}
