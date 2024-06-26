@@ -32,7 +32,7 @@ const Order = () => {
     if (auth?.token) getOrder();
   }, [auth?.token]);
   return (
-    <Layout>
+    <Layout title={`${auth.user.name}-Order`}>
       <div className="container" style={{ marginBottom: "250px" }}>
         <div className="row">
           <div className="col-md-4">

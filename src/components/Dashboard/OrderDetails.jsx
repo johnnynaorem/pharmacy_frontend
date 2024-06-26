@@ -54,7 +54,7 @@ const OrderDetails = () => {
     if (auth?.token) getOrder();
   }, [auth?.token]);
   return (
-    <Layout>
+    <Layout title={`${auth.user.name} - Order-Details`}>
       <div className="container mb-5">
         <div className="row">
           <div className="col-md-4">

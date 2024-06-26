@@ -142,7 +142,7 @@ const Details = () => {
   }, [auth.user]);
 
   return (
-    <Layout>
+    <Layout title={"Product-Details - Adomgi-Hidak"}>
       <div className="container" style={{marginBottom: '100px', marginTop: "150px"}}>
         <div className="row details">
           <div className="col-md-7 left d-flex" style={{alignItems:'center', justifyContent:'center', gap:'10px',backgroundColor: '#F5F5F5'}}>

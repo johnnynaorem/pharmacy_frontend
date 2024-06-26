@@ -5,7 +5,7 @@ import msg_logo from './Image/about-msg.svg'
 
 const AboutUs = () => {
   return (
-    <Layout>
+    <Layout title={"About Us"}>
       <div className="container" style={{width: '85%', marginTop: '150px', marginBottom: '150px'}}>
         <div className="row gap-3">
           <div className="col-md-12 col-lg-3 mx-auto" style={{background: '#FFFFFF', boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>

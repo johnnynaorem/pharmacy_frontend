@@ -42,7 +42,7 @@ const Cart = () => {
   
 
   return (
-    <Layout>
+    <Layout title={`cart-page - AdomGi-Hidak`}>
       <div className="container mb-5" style={{width: '90%'}}>
         <div className="row">
             <div className="top">

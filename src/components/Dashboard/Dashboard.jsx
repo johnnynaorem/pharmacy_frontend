@@ -9,7 +9,7 @@
     const [auth] = useAuth();
     console.log(auth);
     return (
-      <Layout>
+      <Layout title={`${auth.user.name}-(Profile)`}>
         <div className="container" style={{marginBottom: '130px'}}>
           <div className="row">
             <div className="col-md-4">

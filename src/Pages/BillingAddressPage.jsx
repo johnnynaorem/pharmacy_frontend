@@ -63,7 +63,7 @@ const BillingAddressPage = () => {
 
   console.log(cart)
   return (
-    <Layout>
+    <Layout title={`checkout-page - AdomGi-Hidak`}>
       <div className="container" style={{ width: "75%" , marginBottom: '250px', marginTop: '120px'}}>
         <h2 style={{marginBottom: '50px'}}>Billing Details</h2>
         <div className="row">

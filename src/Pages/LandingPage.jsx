@@ -10,7 +10,7 @@ import main from '../components/Product/NewProducts/Main.svg'
 
 const LandingPage = () => {
   return (
-    <Layout>
+    <Layout title={"AdomGi-Hidak - online pharmacy"}>
       <div style={{background: "#EDF4F6"}}>
           <div className="search-part d-flex mx-auto" style={{width:"80%",height: "80px", alignItems: 'center', justifyContent: 'space-around'}}>
             <div>

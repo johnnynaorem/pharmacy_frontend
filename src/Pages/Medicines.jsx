@@ -179,7 +179,7 @@ const Medicines = (props) => {
     }
   }
   return (
-    <Layout>
+    <Layout title={"AdomGi Hidak - All Products"}>
       <div className="container-fluid" style={{marginBottom: '150px'}}>
         <div className="row mt-3">
           <div className="col-md-3">
